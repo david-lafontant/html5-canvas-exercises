@@ -5,6 +5,7 @@ const updateCanvas = () => {
   myCanvas.width = width;
   myCanvas.height = height;
   const context = myCanvas.getContext('2d');
+  context.clearRect(0, 0, width, height); // clear data if present
   context.fillStyle = '#FCEAB8';
   context.fillRect(0, 0, width, height);
   const circleSize = 10;
