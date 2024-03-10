@@ -1,33 +1,18 @@
-import _ from 'lodash';
-import printMe from './print';
+import updateCanvas from './scripts/updateCanvas';
 import './styles/style.css';
-import picture from './images/flower.jpg';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const canvas = document.createElement('canvas');
+canvas.id = 'myCanvas';
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const parent = document.querySelector('body');
+parent.appendChild(canvas);
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  const flower = new Image();
-  flower.src = picture;
-  flower.classList.add('flower');
-
-  element.appendChild(flower);
-  element.appendChild(btn);
-
-  return element;
+function init() {
+  updateCanvas();
 }
 
-document.body.appendChild(component());
+// load canvas on launch
+window.addEventListener('DOMContentLoaded', init, false);
 
-if (module.hot) {
-  module.hot.accept('./print.js', () => {
-    console.log('Accepting the updated printMe module!');
-    printMe();
-  });
-}
+// resize canvas when the window resizes
+window.addEventListener('resize', init);
