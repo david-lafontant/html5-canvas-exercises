@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #1f1e1e;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,3 @@ body{
   justify-content: center;
   padding: 2rem;
 }
-
