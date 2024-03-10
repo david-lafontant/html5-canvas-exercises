@@ -13,12 +13,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'webpack template',
+      title: 'html5 canvas exercises',
     }),
   ],
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     clean: true,
     publicPath: '/',
   },
