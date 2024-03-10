@@ -2,7 +2,7 @@
 
 ## Description
 
-Webpack boilerplate with optimisation option and loader for styling, images and handlind data file such as csv and xml.
+Exercices in : HTML5 Graphing and Data Visualization Cookbook
 
 ## Technologies used
 
@@ -78,7 +78,8 @@ Please give a ⭐️ if you like this project!
 
 - Hat tip to anyone contributed one way or the other.
 - Inspiration
-- etc
+All the code inside this repository come from or are inspired from Ben Fhala's HTML5 Graphing and Data Visualization Cookbook
+Fhala, B. (2012). *HTML5 graphing and data visualization cookbook learn how to create interactive HTML5 charts and graphs with canvas, JavaScript, and Open source tools.* Packt Pub.
 
 ## License
 
